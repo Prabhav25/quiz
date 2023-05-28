@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play and Learn</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets\favicon.png"> 
+</head>
+<body>
+  <h1>Sort the Numbers in ascending order</h1>
+  
+  <div id="quiz_container">
+      <div id="options-container">
+        <h2>Options</h2>
+        <div class="option" draggable="true" ondragstart="drag(event)"></div>
+        <div class="option" draggable="true" ondragstart="drag(event)"></div>
+        <div class="option" draggable="true" ondragstart="drag(event)"></div>
+        <div class="option" draggable="true" ondragstart="drag(event)"></div>
+        <div class="option" draggable="true" ondragstart="drag(event)"></div>
+      </div>
+
+      <div class="right">
+        <div id="inputs-container">
+          <h2>Sort the Numbers</h2>
+          <div class="input" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="input" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="input" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="input" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="input" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        
+        <div class="buttons">
+          <button onclick="checkAnswer()">Check</button>
+          <button onclick="resetGame()">Reset</button>
+        </div>
+     
+        <div class="instructions">
+          <p>Instructions:</p>
+          <p>
+            Select the smallest number from the "Options" section by clicking and holding the mouse button.
+            Drag the selected number and drop it into the "Sort the Numbers" section on the right side.
+            Repeat the process for the remaining numbers, selecting the next smallest number each time and placing next to the previously sorted numbers in the "Sort the Numbers" section.
+            Keep dragging and dropping numbers until all numbers from the "Options" section are in the "Sort the Numbers" section.
+        </div>
+      </div>
+      
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

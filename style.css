@@ -1,0 +1,139 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #4e4e4e;
+    font-family: 'Pangolin', cursive;
+  }
+  
+  #quiz_container {
+    /* max-width: 600px; */
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    max-width: 60rem;
+    height: 20rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .buttons{
+    display: flex;
+    gap: 1rem;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4c6faf;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color: #4c6faf;
+    cursor: pointer;
+  }
+  
+  /* Options container */
+  #options-container {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    margin-right: 20px;
+    float: left;
+    height: 20rem;
+  }
+  
+  .option {
+    /* display: inline-block; */
+    padding: 10px 29px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: move;
+  }
+  
+  /* Inputs container */
+  #inputs-container {
+    overflow: hidden; 
+    
+  }
+  
+  .input {
+    display: inline-block;
+    width: calc(19% - 10px);
+    width: 17%;
+    min-height: 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 60px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input:empty:before {
+    content: 'Drop here';
+    color: #c4c4c4;
+
+  }
+  .input.drop-valid {
+    background-color: #4caf50; /* Change background color for valid drop */
+  }
+  
+  .input.drop-invalid {
+    background-color: #f44336; /* Change background color for invalid drop */
+  }
+
+  .instructions{
+    font-family: 'Pangolin', cursive;
+    padding: 0.5rem;
+  }
+  
+
+
+.success-screen h2{  /*defined in script.js*/
+    font-size: 4rem;
+    font-family: 'Pangolin', cursive;
+    width: 24rem;
+}
+
+.success-screen p{
+    font-family: 'Pangolin', cursive;
+    font-size: 3rem;
+    width: 64rem;
+}
+.try-again-screen h2{  /*defined in script.js*/
+    font-size: 4rem;
+    font-family: 'Pangolin', cursive;
+    width: 24rem;
+}
+
+.try-again-screen p{
+    font-family: 'Pangolin', cursive;
+    font-size: 3rem;
+    width: 64rem;
+}
